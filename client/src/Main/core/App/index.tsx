@@ -1,13 +1,13 @@
-import { RouterProvider } from 'react-router';
-
-import router from 'Main/core/Router';
+import { Outlet } from 'react-router';
 
 import Wrapper from './Wrapper';
+
+import './App.css';
 
 function App() {
   return (
     <Wrapper>
-      <RouterProvider router={router} />,
+      <Outlet />
     </Wrapper>
   );
 }

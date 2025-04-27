@@ -1,3 +1,9 @@
 import routeComponents from '@wiki/sections';
+import App from 'Main/core/App';
 
-export default [{ path: '/', Component: routeComponents.Homepage }];
+export default [
+  {
+    Component: App,
+    children: [{ index: true, Component: routeComponents.Homepage }],
+  },
+];

@@ -1,39 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 /* Root-level variables for dark mode */
 :root {
-    /* Colors */
-    --color-primary: #ff6b6b; /* Primary brand color */
-    --color-secondary: #4ecdc4; /* Secondary brand color */
-    --color-background: #121212; /* Dark background */
-    --color-surface: #1e1e1e; /* Surface color (e.g., cards) */
-    --color-text-primary: #ffffff; /* Primary text color */
-    --color-text-secondary: #b3b3b3; /* Secondary text color */
-    --color-border: #333333; /* Border color */
-  
-    /* Spacing */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
-  
-    /* Typography */
-    --font-family-sans: 'Inter', Arial, sans-serif;
-    --font-family-mono: 'Courier New', monospace;
-    --font-size-sm: 12px;
-    --font-size-md: 16px;
-    --font-size-lg: 20px;
-    --font-size-xl: 24px;
-    --line-height-sm: 1.4;
-    --line-height-md: 1.6;
-    --line-height-lg: 1.8;
-  
-    /* Border Radius */
-    --border-radius-sm: 4px;
-    --border-radius-md: 8px;
-    --border-radius-lg: 16px;
-  
-    /* Shadows */
-    --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.5);
-    --shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.6);
-    --shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.7);
-  }
+  /* Colors */
+  --color-primary: #bf47ff; /* Primary brand color */
+  --color-secondary: #9b59b6; /* Secondary brand color */
+  --color-accent: #d1a3ff; /* Accent color for highlights */
+  --color-background: #121212; /* Dark background */
+  --color-surface: #1e1e1e; /* Surface color (e.g., cards) */
+  --color-text-primary: #e6e6ff; /* Primary text color */
+  --color-text-secondary: #b3b3cc; /* Secondary text color */
+  --color-border: #333333; /* Border color */
+  --color-hover: #7d3c98; /* Hover state color */
+  --color-focus: #a569bd; /* Focus state color */
+
+  /* Spacing */
+  --spacing-1: 4px;
+  --spacing-2: 8px;
+  --spacing-3: 16px;
+  --spacing-4: 24px;
+  --spacing-5: 32px;
+  --spacing-6: 40px;
+  --spacing-7: 48px;
+  --spacing-8: 56px;
+  --spacing-9: 64px;
+  --spacing-10: 72px;
+
+  /* Typography */
+  --font-family-sans: 'Poppins', Arial, sans-serif;
+  --font-family-mono: 'Courier New', monospace;
+  --font-size-sm: 12px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --line-height-sm: 1.4;
+  --line-height-md: 1.6;
+  --line-height-lg: 1.8;
+
+  /* Font Weights */
+  --font-weight-thin: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 800;
+
+  /* Border Radius */
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
+  --border-radius-lg: 16px;
+
+  /* Shadows */
+  --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.7);
+}
