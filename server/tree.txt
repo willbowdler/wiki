@@ -1,0 +1,23 @@
+This is what gpt told me to do 
+
+my-go-graphql-api/
+├── cmd/
+│   └── api/
+│       └── main.go           # Main entry point to start the application
+├── pkg/
+│   ├── graphql/
+│   │   ├── schema.go         # GraphQL schema (types, queries, mutations)
+│   │   ├── resolvers/
+│   │   │   ├── post_resolver.go  # Resolver functions for querying posts
+│   │   │   ├── user_resolver.go  # Resolver functions for user data, etc.
+│   │   │   └── root_resolver.go  # Root resolver that handles the root query and mutation
+│   │   └── handler.go        # GraphQL HTTP handler
+│   ├── models/
+│   │   ├── post.go           # Post model (structs)
+│   │   └── user.go           # User model (structs)
+│   ├── database/
+│   │   └── db.go             # Database connection and queries
+│   └── services/
+│       └── post_service.go   # Service functions for business logic
+├── go.mod                    # Go module file
+└── go.sum                    # Go checksum file
