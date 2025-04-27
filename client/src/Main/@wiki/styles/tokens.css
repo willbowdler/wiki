@@ -1,0 +1,39 @@
+/* Root-level variables for dark mode */
+:root {
+    /* Colors */
+    --color-primary: #ff6b6b; /* Primary brand color */
+    --color-secondary: #4ecdc4; /* Secondary brand color */
+    --color-background: #121212; /* Dark background */
+    --color-surface: #1e1e1e; /* Surface color (e.g., cards) */
+    --color-text-primary: #ffffff; /* Primary text color */
+    --color-text-secondary: #b3b3b3; /* Secondary text color */
+    --color-border: #333333; /* Border color */
+  
+    /* Spacing */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+  
+    /* Typography */
+    --font-family-sans: 'Inter', Arial, sans-serif;
+    --font-family-mono: 'Courier New', monospace;
+    --font-size-sm: 12px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 24px;
+    --line-height-sm: 1.4;
+    --line-height-md: 1.6;
+    --line-height-lg: 1.8;
+  
+    /* Border Radius */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 16px;
+  
+    /* Shadows */
+    --shadow-sm: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    --shadow-md: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    --shadow-lg: 0px 8px 16px rgba(0, 0, 0, 0.7);
+  }

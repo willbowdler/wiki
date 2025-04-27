@@ -1,22 +1,28 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
     "lib": ["DOM", "ES2020"],
-    "module": "ESNext",
     "jsx": "react-jsx",
-    "strict": true,
+    "target": "ES2020",
     "noEmit": true,
     "skipLibCheck": true,
+    "useDefineForClassFields": true,
+
+    /* modules */
+    "module": "ESNext",
     "isolatedModules": true,
     "resolveJsonModule": true,
     "moduleResolution": "bundler",
-    "useDefineForClassFields": true,
-    "allowImportingTsExtensions": true
+    "allowImportingTsExtensions": true,
+    "baseUrl": "./src",
+    "paths": {
+      "@wiki/*": ["Main/@wiki/*"],
+      "@skeleton/*": ["Main/@skeleton/*"]
+    },
+
+    /* type checking */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
   },
-  "include": ["src"],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "CommonJS"
-    }
-  }
+  "include": ["src"]
 }

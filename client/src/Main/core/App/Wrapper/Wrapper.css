@@ -1,0 +1,12 @@
+@import '@wiki/styles/tokens.css';
+
+
+.wrapper {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  padding: var(--spacing-lg);
+  font-family: var(--font-family-sans);
+  min-height: 100vh; /* Ensure the wrapper covers the full viewport height */
+  display: flex;
+  flex-direction: column;
+}

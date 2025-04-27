@@ -1,5 +1,15 @@
+import { RouterProvider } from 'react-router';
+
+import router from 'Main/core/Router';
+
+import Wrapper from './Wrapper';
+
 function App() {
-  return <div>This is the day that the Lord has made</div>;
+  return (
+    <Wrapper>
+      <RouterProvider router={router} />,
+    </Wrapper>
+  );
 }
 
 export default App;
