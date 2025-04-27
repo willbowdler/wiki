@@ -16,7 +16,8 @@
     "baseUrl": "./src",
     "paths": {
       "@wiki/*": ["Main/@wiki/*"],
-      "@skeleton/*": ["Main/@skeleton/*"]
+      "@skeleton/*": ["Main/@skeleton/*"],
+      "@skeleton": ["Main/@skeleton"]
     },
 
     /* type checking */

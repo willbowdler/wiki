@@ -5,7 +5,12 @@ import './Row.css';
 type Props = {
   as?: keyof JSX.IntrinsicElements;
   gap?: number;
-  justifyContent?: 'start' | 'center' | 'end';
+  justifyContent?:
+    | 'start'
+    | 'center'
+    | 'end'
+    | 'space-between'
+    | 'space-around';
   alignItems?: 'start' | 'center' | 'end';
 } & PropsWithChildren &
   AllHTMLAttributes<HTMLElement>;
