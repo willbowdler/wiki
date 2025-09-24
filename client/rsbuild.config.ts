@@ -8,8 +8,8 @@ export default defineConfig({
     alias: {
       '@wiki': path.resolve(__dirname, 'src/Main/@wiki'),
       '@skeleton': path.resolve(__dirname, 'src/Main/@skeleton'),
-      '@assets': path.resolve(__dirname, 'src/@assets'),
       Main: path.resolve(__dirname, 'src/Main'),
+      '@assets': path.resolve(__dirname, 'src/@assets'),
     },
   },
 });
