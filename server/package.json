@@ -1,0 +1,14 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "Thunk Back End",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "willbowdler",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
