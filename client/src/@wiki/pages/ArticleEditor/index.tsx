@@ -1,7 +1,13 @@
 // type Props{}
 
+import RichTextEditor from './RichTextEditor';
+
 function ArticleEditor() {
-  return <></>;
+  return (
+    <>
+      <RichTextEditor />
+    </>
+  );
 }
 
 export default ArticleEditor;

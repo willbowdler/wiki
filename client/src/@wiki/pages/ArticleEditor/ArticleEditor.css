@@ -1,0 +1,4 @@
+.richTextEditor {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,5 +1,5 @@
 import routeComponents from '@wiki/pages';
-import App from '@core/App';
+import { App, AppWithoutNav } from '@core/App';
 
 export default [
   {
@@ -9,6 +9,13 @@ export default [
       { path: 'about', Component: routeComponents.About },
       { path: 'topics', Component: routeComponents.Topics },
       { path: 'contact', Component: routeComponents.Contact },
+    ],
+  },
+  {
+    // TODO Add query param
+    Component: AppWithoutNav,
+    children: [
+      { path: 'article/editor', Component: routeComponents.ArticleEditor },
     ],
   },
 ];
