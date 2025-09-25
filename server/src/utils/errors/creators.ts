@@ -16,5 +16,12 @@ const createNotFoundError = (message = "Resource not found"): AppError =>
 
 const createUnauthorizedError = (message = "Unauthorized"): AppError =>
   createError(401, message, "UNAUTHORIZED");
+const createBadRequestError = (message = "Bad request"): AppError =>
+  createError(400, message, "BAD_REQUEST");
 
-export { createError, createNotFoundError, createUnauthorizedError };
+export {
+  createError,
+  createNotFoundError,
+  createUnauthorizedError,
+  createBadRequestError,
+};

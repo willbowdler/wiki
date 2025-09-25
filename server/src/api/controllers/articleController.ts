@@ -2,7 +2,10 @@ import { Request, Response, NextFunction } from "express";
 
 import { findArticleById } from "api/services/articleService";
 
-import { createNotFoundError } from "utils/errors/creators";
+import {
+  createBadRequestError,
+  createNotFoundError,
+} from "utils/errors/creators";
 
 const getArticleById = async (
   req: Request,
@@ -11,11 +14,11 @@ const getArticleById = async (
 ) => {
   try {
     const { id } = req.params;
-    if (!id) throw new Error("getArticleById: No ID provided");
+    if (!id) throw createBadRequestError("No ID Provided!");
 
     const article = await findArticleById(id);
 
-    if (!article) throw createNotFoundError();
+    if (!article) throw createNotFoundError("Article not found!");
 
     res.json(article);
   } catch (e) {
