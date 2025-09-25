@@ -17,10 +17,6 @@ export default defineConfig({
     ],
   },
   resolve: {
-    alias: {
-      "@database": "./src/config/database.ts",
-      "@logger": "./src/utils/logger.ts",
-    },
     extensions: [".ts", ".js"],
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",

@@ -1,4 +1,4 @@
-import { query } from "@database";
+import { query } from "config/database";
 
 import { Article } from "api/models/Article";
 

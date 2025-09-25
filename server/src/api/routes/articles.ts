@@ -1,4 +1,5 @@
 import express from "express";
+
 import { getArticleById } from "api/controllers/articleController";
 
 const router = express.Router();

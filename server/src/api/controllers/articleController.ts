@@ -2,6 +2,8 @@ import { Request, Response, NextFunction } from "express";
 
 import { findArticleById } from "api/services/articleService";
 
+import { createNotFoundError } from "utils/errors/creators";
+
 const getArticleById = async (
   req: Request,
   res: Response,
@@ -13,7 +15,7 @@ const getArticleById = async (
 
     const article = await findArticleById(id);
 
-    if (!article) throw new Error("getArticleById: 404 Article NOT FOUND");
+    if (!article) throw createNotFoundError();
 
     res.json(article);
   } catch (e) {

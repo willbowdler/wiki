@@ -6,10 +6,6 @@
     "outDir": "./dist", // Match Rspack output
     "rootDir": "./src", // Match Rspack entry
     "baseUrl": "src", // Base for aliases
-    "paths": {
-      "@database": ["config/database.ts"], // Match Rspack alias
-      "@logger": ["utils/logger.ts"] // Match Rspack alias
-    },
     "esModuleInterop": true, // Handle CommonJS npm modules
     "strict": true, // Enforce type safety
     "skipLibCheck": true, // Skip node_modules checks
