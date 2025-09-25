@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Modern JavaScript for Node.js
+    "module": "ESNext", // Use ESM
+    "moduleResolution": "Bundler", // ESM-compatible resolution
+    "outDir": "./dist", // Compiled output directory
+    "rootDir": "./src", // Source directory
+    "baseUrl": "src", // Base for path aliases
+    "paths": {
+      "@database": ["config/database.ts"] // Alias for database.ts
+    },
+    "esModuleInterop": true, // Interop for non-ESM modules
+    "strict": true, // Enable strict type-checking
+    "skipLibCheck": true, // Skip node_modules type checking
+    "resolveJsonModule": true, // Allow JSON imports
+    "sourceMap": true, // Generate source maps
+    "experimentalDecorators": true, // Support decorators (for potential TypeORM)
+    "emitDecoratorMetadata": true // Support decorator metadata
+  },
+  "include": ["src/**/*"], // Include TypeScript files in src
+  "exclude": ["node_modules", "dist"] // Exclude these directories
+}

@@ -4,12 +4,20 @@
   "description": "Thunk Back End",
   "main": "index.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rspack build",
+    "dev": "rspack watch",
+    "start": "node dist/server.js",
+    "type-check": "tsc --noEmit"
   },
   "author": "willbowdler",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@rspack/cli": "^1.5.7",
+    "@rspack/core": "^1.5.7"
   }
 }
