@@ -1,9 +1,7 @@
 @import '@wiki/styles/tokens.css';
 
 .wrapper {
-  padding: var(
-    --spacing-10
-  ); /* Ensure the wrapper covers the full viewport height */
+  padding: var(--spacing-10);
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,5 +1,5 @@
 import routeComponents from '@wiki/sections';
-import App from 'Main/core/App';
+import App from '@core/App';
 
 export default [
   {

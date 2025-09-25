@@ -1,0 +1,15 @@
+@import '@wiki/styles/tokens.css';
+
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-sans);
+  line-height: 1.6;
+}

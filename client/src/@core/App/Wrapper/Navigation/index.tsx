@@ -1,6 +1,5 @@
 import { Column, Row } from '@skeleton';
 
-import TransParentLogo from '@assets/logo_transparent.png';
 import Link from './Link';
 import './Navigation.css';
 
@@ -16,7 +15,6 @@ const navigationLinks: NavigationLink[] = [
 function Navigation() {
   return (
     <Column>
-      <TransParentLogo />
       <Row gap={5}>
         {navigationLinks.map((link) => (
           <Link href={link.href}>{link.name}</Link>
