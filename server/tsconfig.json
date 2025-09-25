@@ -1,22 +1,22 @@
 {
   "compilerOptions": {
-    "target": "ES2020", // Modern JavaScript for Node.js
-    "module": "ESNext", // Use ESM
+    "target": "ES2020", // Modern JS for Node.js
+    "module": "ESNext", // ESM for Rspack
     "moduleResolution": "Bundler", // ESM-compatible resolution
-    "outDir": "./dist", // Compiled output directory
-    "rootDir": "./src", // Source directory
-    "baseUrl": "src", // Base for path aliases
+    "outDir": "./dist", // Match Rspack output
+    "rootDir": "./src", // Match Rspack entry
+    "baseUrl": "src", // Base for aliases
     "paths": {
-      "@database": ["config/database.ts"] // Alias for database.ts
+      "@database": ["config/database.ts"] // Match Rspack alias
     },
-    "esModuleInterop": true, // Interop for non-ESM modules
-    "strict": true, // Enable strict type-checking
-    "skipLibCheck": true, // Skip node_modules type checking
+    "esModuleInterop": true, // Handle CommonJS npm modules
+    "strict": true, // Enforce type safety
+    "skipLibCheck": true, // Skip node_modules checks
     "resolveJsonModule": true, // Allow JSON imports
-    "sourceMap": true, // Generate source maps
-    "experimentalDecorators": true, // Support decorators (for potential TypeORM)
-    "emitDecoratorMetadata": true // Support decorator metadata
+    "sourceMap": true, // Match Rspack devtool
+    "experimentalDecorators": true, // For potential TypeORM
+    "emitDecoratorMetadata": true // For decorator metadata
   },
-  "include": ["src/**/*"], // Include TypeScript files in src
-  "exclude": ["node_modules", "dist"] // Exclude these directories
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
 }

@@ -1,7 +1,5 @@
-// src/app.ts
 import express, { Application } from "express";
 import cors from "cors";
-import bodyParser from "body-parser";
 
 import articleRoutes from "./api/routes/articles";
 import categoryRoutes from "./api/routes/categories";
@@ -13,9 +11,10 @@ import { errorHandler } from "./utils/errorHandler";
 const app: Application = express();
 
 // Middleware
-// TODO Look more into cors configurationcd
+// TODO Look more into cors configuration
 app.use(cors({ origin: "http://yourfrontend.com" }));
-app.use(bodyParser.json());
+app.use(express.json()); // Parses JSON bodies
+app.use(express.urlencoded({ extended: true })); // Parses URL-encoded bodies
 
 // Routes
 app.use("/api/v1/articles", articleRoutes);

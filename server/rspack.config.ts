@@ -8,11 +8,10 @@ export default defineConfig({
     library: { type: "module" },
   },
   module: {
-    // TODO is this option what I want?
     rules: [
       {
         test: /\.ts$/,
-        use: { loader: "builtin:swc-loader" }, // Built-in TS support via SWC
+        use: { loader: "builtin:swc-loader" },
         type: "javascript/auto",
       },
     ],
