@@ -13,8 +13,9 @@ const app: Application = express();
 // Middleware
 // TODO Look more into cors configuration
 app.use(cors({ origin: "http://yourfrontend.com" }));
-app.use(express.json()); // Parses JSON bodies
-app.use(express.urlencoded({ extended: true })); // Parses URL-encoded bodies
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
 // Routes
 app.use("/api/v1/articles", articleRoutes);
