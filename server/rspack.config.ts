@@ -24,6 +24,7 @@ export default defineConfig({
     extensions: [".ts", ".js"],
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
+  // TODO source maps?
   devtool: "source-map",
   target: "node",
   experiments: {
