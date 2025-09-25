@@ -3,7 +3,7 @@
 .link {
   text-decoration: none;
   color: var(--color-text-primary);
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-s);
   font-weight: var(--font-weight-medium);
   padding: var(--spacing-2) var(--spacing-3);
   transition: color 0.3s ease;

@@ -6,7 +6,7 @@ import categoryRoutes from "./api/routes/categories";
 import tagRoutes from "./api/routes/tags";
 import userRoutes from "./api/routes/users";
 
-import { errorHandler } from "./utils/errorHandler";
+import { errorHandler } from "./utils/errors/errorHandler";
 
 const app: Application = express();
 

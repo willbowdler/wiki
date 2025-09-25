@@ -1,5 +1,5 @@
 import mysql, { Pool } from "mysql2/promise";
-import { logger } from "@logger";
+import { logger } from "utils/logger";
 
 let pool: Pool | null = null;
 
