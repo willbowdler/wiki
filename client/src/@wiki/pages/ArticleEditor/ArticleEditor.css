@@ -1,4 +1,7 @@
 .richTextEditor {
-  display: flex;
-  flex-direction: column;
+  /* TODO turn these into global styles if I need to */
+  height: 90vh;
+  width: 80vw;
+  outline: 'none';
+  border: var(--border-width-md) solid var(--color-border);
 }

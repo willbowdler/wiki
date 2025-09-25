@@ -1,6 +1,7 @@
 import { PropsWithChildren } from 'react';
-import './Page.css';
 import Column from '@skeleton/Column';
+
+import './Page.css';
 
 type Props = PropsWithChildren;
 

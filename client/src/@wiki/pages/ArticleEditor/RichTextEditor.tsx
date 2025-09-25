@@ -7,6 +7,7 @@ import { LexicalErrorBoundary } from '@lexical/react/LexicalErrorBoundary';
 
 import { HeadingNode } from '@lexical/rich-text';
 import { CodeHighlightNode, CodeNode } from '@lexical/code';
+import { Text } from '@skeleton/Text';
 
 const theme = {
   // Theme styling goes here
@@ -35,7 +36,7 @@ function RichTextEditor() {
           <ContentEditable
             className="richTextEditor"
             aria-placeholder={'Enter some text...'}
-            placeholder={<div>Enter some text...</div>}
+            placeholder={<Text>Fire away those flaming keystrokes...</Text>}
           />
         }
         ErrorBoundary={LexicalErrorBoundary}
