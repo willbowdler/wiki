@@ -1,7 +1,8 @@
-@import '@wiki/styles/tokens.css';
+@import '@core/styles/tokens.css';
 
 .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .gap-1 {

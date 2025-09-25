@@ -1,10 +1,13 @@
-import { Column, Row } from '@skeleton';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
-import Link from './Link';
+import { Row } from '@skeleton';
+
 import './Navigation.css';
+import { NavLink } from 'react-router';
 
 type NavigationLink = { name: string; href: string; target?: string };
 
+// TODO I feel like there must be a better way to store nav-link data
 const navigationLinks: NavigationLink[] = [
   { name: 'Home', href: '/' },
   { name: 'Topics', href: '/topics' },
@@ -14,13 +17,16 @@ const navigationLinks: NavigationLink[] = [
 
 function Navigation() {
   return (
-    <Column>
-      <Row gap={5}>
+    <Row alignItems="center" justifyContent="space-around">
+      <Row gap={4} justifyContent="space-between">
         {navigationLinks.map((link) => (
-          <Link href={link.href}>{link.name}</Link>
+          <NavLink className="link" to={link.href}>
+            {link.name}
+          </NavLink>
         ))}
       </Row>
-    </Column>
+      <GiHamburgerMenu className="hamburger" />
+    </Row>
   );
 }
 

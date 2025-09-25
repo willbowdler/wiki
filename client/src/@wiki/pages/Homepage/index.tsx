@@ -1,5 +1,5 @@
 function Homepage() {
-  return <div>Yo my Name is Jose</div>;
+  return <div>This is the homepage</div>;
 }
 
 export default Homepage;
