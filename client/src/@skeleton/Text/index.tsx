@@ -21,16 +21,24 @@ type Props = {
 
 export const Text = ({
   fontFamily = 'primary',
-  variant = 'primary',
+  variant,
   as: Component = 'span',
   weight = 'regular',
   textSize = 'md',
   height = 'md',
   children,
+  className = '',
 }: Props) => {
   return (
     <Component
-      className={`text-line-height-${height} text-weight-${weight} text-variant-${variant} text-size-${textSize} text-font-family-${fontFamily}`}
+      className={`
+          text-line-height-${height}
+          text-weight-${weight}
+          text-variant-${variant}
+          text-size-${textSize}
+          text-font-family-${fontFamily}
+          ${className}
+        `}
     >
       {children}
     </Component>

@@ -21,10 +21,11 @@ function Column({
   justifyContent = 'start',
   alignItems = 'start',
   children,
+  className = '',
 }: Props) {
   return (
     <Component
-      className={`column gap-${gap}`}
+      className={`column gap-${gap} ${className}`}
       style={{ justifyContent: justifyContent, alignItems: alignItems }}
     >
       {children}

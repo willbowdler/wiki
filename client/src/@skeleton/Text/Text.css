@@ -2,13 +2,11 @@
 
 /* Variants for color */
 .text-variant-primary {
-  color: var(--color-primary);
+  color: var(--color-text-primary);
 }
-
 .text-variant-secondary {
-  color: var(--color-secondary);
+  color: var(--color-text-secondary);
 }
-
 .text-variant-success {
   color: var(--color-text-success);
 }
@@ -79,7 +77,9 @@
 }
 
 /* Font family */
-/* No primary class since that is the default App-wide */
+.text-font-family-primary {
+  font-family: var(--font-family-primary);
+}
 .text-font-family-secondary {
   font-family: var(--font-family-secondary);
 }
