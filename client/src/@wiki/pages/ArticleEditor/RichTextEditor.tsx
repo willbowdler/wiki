@@ -9,8 +9,7 @@ import { OnChangePlugin } from '@lexical/react/LexicalOnChangePlugin';
 import { HeadingNode } from '@lexical/rich-text';
 import { CodeHighlightNode, CodeNode } from '@lexical/code';
 
-import { Text } from '@skeleton/Text';
-import { Column } from '@skeleton';
+import { Text, Flex } from '@mantine/core';
 
 import { editorTheme } from './editorTheme';
 import ToolbarPlugin from './plugins/ToolbarPlugin';
@@ -35,7 +34,7 @@ function RichTextEditor() {
   };
 
   return (
-    <Column className="richTextEditorContainer">
+    <Flex className="richTextEditorContainer">
       <LexicalComposer initialConfig={initialConfig}>
         <ToolbarPlugin />
         <RichTextPlugin
@@ -56,7 +55,7 @@ function RichTextEditor() {
         <AutoFocusPlugin />
         <OnChangePlugin onChange={onChange} />
       </LexicalComposer>
-    </Column>
+    </Flex>
   );
 }
 

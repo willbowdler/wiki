@@ -1,9 +1,9 @@
 import routeComponents from '@wiki/pages';
-import { App, AppWithoutNav } from '@core/App';
+import { Layout, LayoutNoNav } from '@core/Layout';
 
 export default [
   {
-    Component: App,
+    Component: Layout,
     children: [
       { index: true, Component: routeComponents.Homepage },
       { path: 'about', Component: routeComponents.About },
@@ -13,7 +13,7 @@ export default [
   },
   {
     // TODO Add query param
-    Component: AppWithoutNav,
+    Component: LayoutNoNav,
     children: [
       { path: 'article/editor', Component: routeComponents.ArticleEditor },
     ],
