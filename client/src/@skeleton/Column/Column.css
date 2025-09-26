@@ -1,6 +1,0 @@
-@import '@core/styles/tokens.css';
-
-.column {
-  display: flex;
-  flex-direction: column;
-}

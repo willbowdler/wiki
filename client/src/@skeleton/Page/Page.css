@@ -1,6 +1,0 @@
-@import '@core/styles/tokens.css';
-
-.page {
-  padding: var(--spacing-3);
-  min-height: 100vh;
-}
