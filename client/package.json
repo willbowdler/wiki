@@ -15,6 +15,8 @@
     "@lexical/react": "^0.36.1",
     "@lexical/rich-text": "^0.36.1",
     "@lexical/utils": "^0.36.1",
+    "@mantine/core": "^8.3.2",
+    "@mantine/hooks": "^8.3.2",
     "lexical": "^0.36.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
