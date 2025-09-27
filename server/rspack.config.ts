@@ -1,6 +1,6 @@
-import { defineConfig } from "@rspack/cli";
+import { defineConfig, type Configuration } from "@rspack/cli";
 
-export default defineConfig({
+const config: Configuration = defineConfig({
   entry: "./src/server.ts",
   output: {
     path: "./dist",
@@ -27,3 +27,5 @@ export default defineConfig({
     outputModule: true, // ESM bundles
   },
 });
+
+export default config;
