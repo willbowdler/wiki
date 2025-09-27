@@ -4,11 +4,11 @@ const theme: MantineThemeOverride = {
   // Core colors
   colors: {
     primary: [
-      '#f2d9ff', // Lighter shades for Mantine (10 shades required)
+      '#f2d9ff',
       '#e6b3ff',
       '#d98cff',
       '#cc66ff',
-      '#bf47ff', // --color-primary
+      '#bf47ff',
       '#a33de6',
       '#8833cc',
       '#6c29a6',
@@ -20,7 +20,7 @@ const theme: MantineThemeOverride = {
       '#d1a3e0',
       '#ba76d1',
       '#a348c1',
-      '#9b59b6', // --color-secondary
+      '#9b59b6',
       '#854d9e',
       '#6f4086',
       '#59336e',
@@ -31,7 +31,7 @@ const theme: MantineThemeOverride = {
       '#f0e0ff',
       '#e6ccff',
       '#dbb8ff',
-      '#d1a3ff', // --color-accent
+      '#d1a3ff',
       '#b88ce6',
       '#9e76cc',
       '#8560b3',
@@ -45,7 +45,7 @@ const theme: MantineThemeOverride = {
       '#333333',
       '#262626',
       '#1a1a1a',
-      '#121212', // --color-background
+      '#121212',
       '#0f0f0f',
       '#0c0c0c',
       '#090909',
@@ -56,7 +56,7 @@ const theme: MantineThemeOverride = {
       '#4d4d4d',
       '#3e3e3e',
       '#2f2f2f',
-      '#1e1e1e', // --color-surface
+      '#1e1e1e',
       '#191919',
       '#141414',
       '#0f0f0f',
@@ -66,10 +66,10 @@ const theme: MantineThemeOverride = {
     text: [
       '#ffffff',
       '#f5f5ff',
-      '#e6e6ff', // --color-text-primary
+      '#e6e6ff',
       '#d9d9ff',
       '#ccccff',
-      '#b3b3cc', // --color-text-secondary
+      '#b3b3cc',
       '#9999b3',
       '#808099',
       '#666680',
@@ -80,7 +80,7 @@ const theme: MantineThemeOverride = {
       '#f4a8a1',
       '#ef8e86',
       '#ea746b',
-      '#e74c3c', // --color-text-error
+      '#e74c3c',
       '#cf4336',
       '#b83a30',
       '#a03129',
@@ -92,7 +92,7 @@ const theme: MantineThemeOverride = {
       '#9ce6b3',
       '#80db9a',
       '#64d081',
-      '#2ecc71', // --color-text-success
+      '#2ecc71',
       '#29b865',
       '#24a359',
       '#1e8e4d',
@@ -100,8 +100,8 @@ const theme: MantineThemeOverride = {
       '#146435',
     ],
   },
-  primaryColor: 'primary', // Default color for components (e.g., Button)
-  primaryShade: { light: 4, dark: 4 }, // Use --color-primary (#bf47ff) for both light and dark
+  primaryColor: 'primary',
+  primaryShade: { light: 4, dark: 4 },
 
   // Typography
   fontFamily: '"Poppins", Arial, sans-serif',
@@ -120,7 +120,7 @@ const theme: MantineThemeOverride = {
   },
   headings: {
     fontFamily: '"Poppins", Arial, sans-serif',
-    fontWeight: '700', // --font-weight-bold
+    fontWeight: '700',
     textWrap: 'balance',
     sizes: {
       h1: { fontSize: '32px', lineHeight: '1.4', fontWeight: '700' },
@@ -134,37 +134,37 @@ const theme: MantineThemeOverride = {
 
   // Spacing, radius, and shadows
   spacing: {
-    xs: '4px', // --spacing-1
-    sm: '8px', // --spacing-2
-    md: '16px', // --spacing-3
-    lg: '24px', // --spacing-4
-    xl: '32px', // --spacing-5
+    xs: '4px',
+    sm: '8px',
+    md: '16px',
+    lg: '24px',
+    xl: '32px',
   },
   radius: {
-    sm: '4px', // --border-radius-sm
-    md: '8px', // --border-radius-md
-    lg: '16px', // --border-radius-lg
+    sm: '4px',
+    md: '8px',
+    lg: '16px',
   },
   defaultRadius: 'md',
   shadows: {
-    sm: '0px 2px 4px rgba(0, 0, 0, 0.5)', // --shadow-sm
-    md: '0px 4px 8px rgba(0, 0, 0, 0.6)', // --shadow-md
-    lg: '0px 8px 16px rgba(0, 0, 0, 0.7)', // --shadow-lg
+    sm: '0px 2px 4px rgba(0, 0, 0, 0.5)',
+    md: '0px 4px 8px rgba(0, 0, 0, 0.6)',
+    lg: '0px 8px 16px rgba(0, 0, 0, 0.7)',
   },
 
   // Additional settings
-  focusRing: 'auto', // Default focus ring behavior
-  scale: 1, // Default font-size scale
-  fontSmoothing: true, // Default font smoothing
-  white: '#ffffff', // Standard white
-  black: '#000000', // Standard black
+  focusRing: 'auto',
+  scale: 1,
+  fontSmoothing: true,
+  white: '#ffffff',
+  black: '#000000',
   respectReducedMotion: true, // Respect OS reduced motion settings
   cursorType: 'pointer', // Interactive elements use pointer cursor
   defaultGradient: {
     from: 'primary',
     to: 'secondary',
     deg: 45,
-  }, // Gradient for components like Button
+  },
 };
 
 export { theme };

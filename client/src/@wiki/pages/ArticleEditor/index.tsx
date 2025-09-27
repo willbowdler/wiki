@@ -2,7 +2,7 @@
 
 import RichTextEditor from './RichTextEditor';
 
-import './ArticleEditor.css';
+import './ArticleEditor.module.css';
 
 function ArticleEditor() {
   return <RichTextEditor />;

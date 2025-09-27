@@ -8,7 +8,7 @@ import { theme } from '@core/theme';
 
 export default function App() {
   return (
-    <MantineProvider theme={theme}>
+    <MantineProvider theme={theme} defaultColorScheme="dark">
       <RouterProvider router={router} />
     </MantineProvider>
   );
