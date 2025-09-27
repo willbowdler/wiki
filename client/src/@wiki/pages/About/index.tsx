@@ -1,6 +1,4 @@
-// type Props {
-
-// }
+// interface Props {}
 
 function About() {
   return <>This is the about page</>;

@@ -18,8 +18,4 @@ function Layout() {
   );
 }
 
-function LayoutNoNav() {
-  return <Outlet />;
-}
-
-export { Layout, LayoutNoNav };
+export { Layout };

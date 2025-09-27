@@ -13,9 +13,7 @@ export default [
   },
   {
     // TODO Add query param
-    Component: LayoutNoNav,
-    children: [
-      { path: 'article/editor', Component: routeComponents.ArticleEditor },
-    ],
+    path: 'article/editor',
+    Component: routeComponents.ArticleEditor,
   },
 ];

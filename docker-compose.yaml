@@ -28,7 +28,6 @@ services:
     networks:
       - app-network
 
-  # Optional: Add database (e.g., PostgreSQL)
   db:
     image: postgres:15
     environment:

@@ -12,6 +12,7 @@ const links = [
 
 function Header() {
   return (
+    // TODO determine if there is a way that we can normalize global margins/padding a bit
     <Group h="100%" align="center" justify="flex-end" gap={20} mr={'xl'}>
       {/* TODO create responsive menu */}
       <Group>
