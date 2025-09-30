@@ -18,6 +18,11 @@ const config: Configuration = defineConfig({
   },
   resolve: {
     extensions: [".ts", ".js"],
+    alias: {
+      "@config": "./src/config",
+      "@utils": "./src/utils",
+      "@api": "./src/api",
+    },
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   // TODO source maps?

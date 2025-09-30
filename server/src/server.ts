@@ -1,6 +1,6 @@
 import app from "./app";
-import { initDb } from "config/database";
-import { logger } from "utils/logger";
+import { initDb } from "@config/database";
+import { logger } from "@utils/logger";
 
 const PORT = process.env.PORT || 5000;
 

@@ -1,11 +1,11 @@
-import { Request, Response, NextFunction } from "express";
+import type { Request, Response, NextFunction } from "express";
 
-import { findArticleById } from "api/services/articleService";
+import { findArticleById } from "@api/services/articleService";
 
 import {
   createBadRequestError,
   createNotFoundError,
-} from "utils/errors/creators";
+} from "@utils/errors/creators";
 
 const getArticleById = async (
   req: Request,
