@@ -1,8 +1,8 @@
-import express, { Application } from "express";
+import express, { type Application } from "express";
 import cors from "cors";
 
 import articleRoutes from "./api/routes/articles";
-import categoryRoutes from "./api/routes/categories";
+import categoryRoutes from "./api/routes/topics";
 import tagRoutes from "./api/routes/tags";
 import userRoutes from "./api/routes/users";
 

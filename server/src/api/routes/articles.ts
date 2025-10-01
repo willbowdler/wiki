@@ -1,8 +1,8 @@
-import express from "express";
+import express, { type Router } from "express";
 
-import { getArticleById } from "api/controllers/articleController";
+import { getArticleById } from "@api/controllers/articleController";
 
-const router = express.Router();
+const router: Router = express.Router();
 
 router.get("/", (req, res) => {
   res.send("Welcome to the article API!");

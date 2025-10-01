@@ -1,6 +1,6 @@
-import express from "express";
+import express, { type Router } from "express";
 
-const router = express.Router();
+const router: Router = express.Router();
 
 router.get("/", (req, res) => {
   res.send("Welcome to the tags API!");

@@ -1,4 +1,5 @@
 import { defineConfig, type Configuration } from "@rspack/cli";
+import { resolve } from "path";
 
 const config: Configuration = defineConfig({
   entry: "./src/server.ts",
@@ -19,9 +20,9 @@ const config: Configuration = defineConfig({
   resolve: {
     extensions: [".ts", ".js"],
     alias: {
-      "@config": "./src/config",
-      "@utils": "./src/utils",
-      "@api": "./src/api",
+      "@config": resolve(__dirname, "src/config"),
+      "@utils": resolve(__dirname, "src/utils"),
+      "@api": resolve(__dirname, "src/api"),
     },
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
