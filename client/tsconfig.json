@@ -9,9 +9,10 @@
 
     /* modules */
     "module": "ESNext",
-    "isolatedModules": true,
+    "esModuleInterop": true,
+    // "isolatedModules": true,
     "resolveJsonModule": true,
-    "moduleResolution": "bundler",
+    "moduleResolution": "Bundler",
     "allowImportingTsExtensions": true,
     "baseUrl": "./src",
 

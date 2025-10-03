@@ -1,12 +1,14 @@
-import app from "./app";
+import "@config/env";
+
 import { initDb } from "@config/database";
 import { logger } from "@utils/logger";
 
-const PORT = process.env.PORT || 5000;
+import app from "./app";
 
 const startServer = async () => {
   try {
     await initDb();
+    const PORT = process.env.PORT || 3000;
     app.listen(PORT, () => logger.info(`Server running on port ${PORT}`));
   } catch (err) {
     logger.error("Server failed to start", err);

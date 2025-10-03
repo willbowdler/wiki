@@ -1,4 +1,5 @@
 import { defineConfig, type Configuration } from "@rspack/cli";
+import { DefinePlugin } from "@rspack/core";
 import { resolve } from "path";
 
 const config: Configuration = defineConfig({
@@ -25,6 +26,12 @@ const config: Configuration = defineConfig({
       "@api": resolve(__dirname, "src/api"),
     },
   },
+  plugins: [
+    new DefinePlugin({
+      DEVELOPMENT: JSON.stringify(process.env.NODE_ENV === "development"),
+      PRODUCTION: JSON.stringify(process.env.NODE_ENV === "production"),
+    }),
+  ],
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
   // TODO source maps?
   devtool: "source-map",

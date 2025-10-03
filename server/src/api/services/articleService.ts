@@ -3,7 +3,7 @@ import { db } from "@config/database";
 import { Article } from "@api/models/Article";
 
 const findArticleById = async (id: string): Promise<Article> => {
-  const article = await db.query<Article>(
+  const article = await db!.query<Article>(
     "SELECT * FROM articles WHERE id = ?",
     [id]
   );
